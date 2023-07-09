@@ -1,0 +1,14 @@
+<h2 class="edit-product-heading">Edit Product</h2>
+<div class="form-field">
+  <label for="edit-id">ID: </label>
+  <input id="edit-id" type="number" [(ngModel)]="product.id" required>
+</div>
+<div class="form-field">
+  <label for="edit-name">Name: </label>
+  <input id="edit-name" type="text" [(ngModel)]="product.name" required>
+</div>
+<div class="form-field">
+  <label for="edit-price">Price: </label>
+  <input id="edit-price" type="number" [(ngModel)]="product.price" required>
+</div>
+<button class="save-button" (click)="save()">Save</button>

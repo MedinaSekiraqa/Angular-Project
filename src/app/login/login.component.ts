@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,7 +14,7 @@ export class LoginComponent {
 
   login() {
     // Check email and password
-    if (this.email ==='medina@gmail.com' && this.password === 'medina123') {
+    if (this.email === 'medina@gmail.com' && this.password === 'medina123') {
       // Successful login
       alert('Login successful!');
       this.router.navigate(['/home']); // Redirect to home page

@@ -1,1 +1,24 @@
-<p>product works!</p>
+<h2>Products</h2>
+<table class="product-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>
+        <button class="action-button edit-button" (click)="editProduct(product)">Edit</button>
+        <button class="action-button delete-button" (click)="deleteProduct(product.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button class="add-button" (click)="openAddDialog()">Add</button>
+<button class="logout-button" (click)="logout()">Logout</button>

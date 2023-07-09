@@ -1,0 +1,16 @@
+<h2 class="add-product-heading">Add Product</h2>
+<div class="form-field">
+  <label for="id">ID: </label>
+  <input id="id" type="number" [(ngModel)]="product.id" required>
+</div>
+<div class="form-field">
+  <label for="name">Name: </label>
+  <input id="name" type="text" [(ngModel)]="product.name" required>
+</div>
+<div class="form-field">
+  <label for="price">Price: </label>
+  <input id="price" type="number" [(ngModel)]="product.price" required>
+</div>
+<button class="save-button" (click)="save()">Save</button>
+
+
